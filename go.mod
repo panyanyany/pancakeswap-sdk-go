@@ -1,4 +1,4 @@
-module github.com/nikolalosic/pancakeswap-sdk-go
+module github.com/panyanyany/pancakeswap-sdk-go
 
 go 1.15
 
