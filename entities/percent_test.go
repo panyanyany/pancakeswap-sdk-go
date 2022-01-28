@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/nikolalosic/pancakeswap-sdk-go/number"
+	"github.com/panyanyany/pancakeswap-sdk-go/number"
 )
 
 // nolint:dupl

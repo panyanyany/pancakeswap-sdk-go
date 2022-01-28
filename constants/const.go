@@ -45,9 +45,9 @@ var (
 	Five  = big.NewInt(5)
 	Ten   = big.NewInt(10)
 
-	B100  = big.NewInt(100)
-	B997  = big.NewInt(9975)
-	B1000 = big.NewInt(1000)
+	B100   = big.NewInt(100)
+	B9975  = big.NewInt(9975)
+	B10000 = big.NewInt(10000)
 )
 
 type SolidityType string

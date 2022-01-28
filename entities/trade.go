@@ -3,7 +3,7 @@ package entities
 import (
 	"fmt"
 
-	"github.com/nikolalosic/pancakeswap-sdk-go/constants"
+	"github.com/panyanyany/pancakeswap-sdk-go/constants"
 )
 
 var (

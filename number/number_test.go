@@ -5,7 +5,7 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/nikolalosic/pancakeswap-sdk-go/constants"
+	"github.com/panyanyany/pancakeswap-sdk-go/constants"
 )
 
 func mustNewFromString(s string) decimal.Decimal {

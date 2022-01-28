@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/nikolalosic/pancakeswap-sdk-go/constants"
+	"github.com/panyanyany/pancakeswap-sdk-go/constants"
 )
 
 var (

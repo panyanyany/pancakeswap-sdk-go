@@ -5,8 +5,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/nikolalosic/pancakeswap-sdk-go/constants"
-	"github.com/nikolalosic/pancakeswap-sdk-go/number"
+	"github.com/panyanyany/pancakeswap-sdk-go/constants"
+	"github.com/panyanyany/pancakeswap-sdk-go/number"
 )
 
 type Price struct {
