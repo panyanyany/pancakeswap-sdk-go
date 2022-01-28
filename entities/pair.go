@@ -201,9 +201,9 @@ func (p *Pair) GetOutputAmount(inputAmount *TokenAmount) (*TokenAmount, *Pair, e
 		return nil, nil, err
 	}
 
-	inputAmountWithFee := big.NewInt(0).Mul(inputAmount.Raw(), constants.B997)
+	inputAmountWithFee := big.NewInt(0).Mul(inputAmount.Raw(), constants.B9975)
 	numerator := big.NewInt(0).Mul(inputAmountWithFee, outputReserve.Raw())
-	denominator := big.NewInt(0).Add(big.NewInt(0).Mul(inputReserve.Raw(), constants.B1000), inputAmountWithFee)
+	denominator := big.NewInt(0).Add(big.NewInt(0).Mul(inputReserve.Raw(), constants.B10000), inputAmountWithFee)
 	outputAmount, err := NewTokenAmount(token, big.NewInt(0).Div(numerator, denominator))
 	if err != nil {
 		return nil, nil, err
@@ -253,9 +253,9 @@ func (p *Pair) GetInputAmount(outputAmount *TokenAmount) (*TokenAmount, *Pair, e
 	}
 
 	numerator := big.NewInt(0).Mul(inputReserve.Raw(), outputAmount.Raw())
-	numerator.Mul(numerator, constants.B1000)
+	numerator.Mul(numerator, constants.B10000)
 	denominator := big.NewInt(0).Sub(outputReserve.Raw(), outputAmount.Raw())
-	denominator.Mul(denominator, constants.B997)
+	denominator.Mul(denominator, constants.B9975)
 	amount := big.NewInt(0).Div(numerator, denominator)
 	amount.Add(amount, constants.One)
 	inputAmount, err := NewTokenAmount(token, amount)
